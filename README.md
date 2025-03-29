@@ -42,6 +42,9 @@ This file sets up the server and runs it from the given port in main.
       ]
         ```
 
+- `/health` :
+    - Returns HTTP Code `200 OK` to indicate the server is up and running.
+
 - `/<game_id>/` : 
 
     - Returns general information about the game specified by `game_id`. This is used, for example, by GamesmanUni when a game is clicked in order to see which variants are available in order to render the list of available variants.
