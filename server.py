@@ -244,5 +244,9 @@ def get_instructions(game_id: str, variant_id: str) -> dict[str: str]:
         return {'instructions': md_instr(game_type, game_id, locale)}
     return error('Game')
 
+@app.route("/health")
+def health_check():
+    return ('', 200)
+
 if __name__ == '__main__':
     app.run(port=8082)
